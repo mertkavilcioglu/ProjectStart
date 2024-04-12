@@ -1,19 +1,80 @@
-[gd_scene load_steps=5 format=3 uid="uid://n83jjoowltlj"]
+[gd_scene load_steps=4 format=3 uid="uid://n83jjoowltlj"]
 
-[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_8nolq"]
 [ext_resource type="PackedScene" uid="uid://m53m1uhctp77" path="res://Objects/Character.tscn" id="2_gws4f"]
 [ext_resource type="Texture2D" uid="uid://cqxx241s288pl" path="res://Sprites/5436446554_9244788c36_b.jpg" id="2_mlvij"]
-[ext_resource type="PackedScene" uid="uid://bm48kc742smsm" path="res://Objects/rigid_body_2d.tscn" id="5_kkc8d"]
 
-[node name="Game" type="Node2D"]
-script = ExtResource("1_8nolq")
+[sub_resource type="GDScript" id="GDScript_kogl8"]
+script/source = "extends Node2D
+
+
+
+var choise = randi_range(1,4)
+var choise2 
+var character= load(\"res://Objects/Character.tscn\").instantiate()
+@onready var cam = $Camera2D
+
+
+
+func _on_timer_timeout():
+	choise = randi_range(1,4)
+
+
+
+func _on_timer_2_timeout():
+
+	var enemy = preload(\"res://Objects/rigid_body_2d.tscn\").instantiate()
+	add_child(enemy)
+	
+	var randx1 = randi_range(-467,1835)
+	var randx2 = randi_range(-1000,1835)
+	var randx3 = randi_range(-1100,1067)
+	var randy1 =  randi_range(-775,1490)
+	var randy2 = randi_range(-775,1057)
+	var randy3 = randi_range(-457,1490)
+	var enemy_position
+
+	choise2 = randi_range(1,3)
+	
+	if choise == 1:
+		if choise2 == 1:
+			enemy_position = Vector2(randx1,1490)
+		elif choise2 == 2:
+			enemy_position = Vector2(1835,randy1)
+		elif choise2 == 3:
+			enemy_position = Vector2(randx1,-775)
+	elif choise == 2:
+		if choise2 == 1:
+			enemy_position = Vector2(1835,randy2)
+		elif choise2 == 2:
+			enemy_position = Vector2(randx2,-775)
+		elif choise2 == 3:
+			enemy_position = Vector2(-1100,randy2)
+	elif choise == 3:
+		if choise2 == 1:
+			enemy_position = Vector2(randx3,-775)
+		elif choise2 == 2:
+			enemy_position = Vector2(-1100,randy1)
+		elif choise2 == 3:
+			enemy_position = Vector2(randx3,1490)
+	elif choise == 4:
+		if choise2 == 1:
+			enemy_position = Vector2(-1100,randy3)
+		elif choise2 == 2:
+			enemy_position = Vector2(randx2,1490)
+		elif choise2 == 3:
+			enemy_position = Vector2(1835,randy3)
+	enemy.position = enemy_position + cam.position
+"
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("GDScript_kogl8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(368, 358)
 scale = Vector2(0.165, 0.165)
 zoom = Vector2(0.75, 0.75)
 
-[node name="Character" parent="." instance=ExtResource("2_gws4f")]
+[node name="Player" parent="." instance=ExtResource("2_gws4f")]
 z_index = 1
 position = Vector2(368, 358)
 scale = Vector2(0.165, 0.165)
@@ -123,13 +184,6 @@ light_mask = 0
 z_index = -3
 texture_repeat = 2
 position = Vector2(44, -191)
-texture = ExtResource("2_mlvij")
-
-[node name="54364465549244788c36B22" type="Sprite2D" parent="Background"]
-light_mask = 0
-z_index = -3
-texture_repeat = 2
-position = Vector2(44, 833)
 texture = ExtResource("2_mlvij")
 
 [node name="BackGround8" type="Sprite2D" parent="Background"]
@@ -307,6 +361,13 @@ texture_repeat = 2
 position = Vector2(-3028, 3905)
 texture = ExtResource("2_mlvij")
 
+[node name="54364465549244788c36B22" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, 833)
+texture = ExtResource("2_mlvij")
+
 [node name="BackGround21" type="Sprite2D" parent="Background"]
 light_mask = 0
 z_index = -3
@@ -468,15 +529,13 @@ texture_repeat = 2
 position = Vector2(3116, 3905)
 texture = ExtResource("2_mlvij")
 
-[node name="Lasers" type="Node" parent="."]
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
 
-[node name="RigidBody2D14" parent="." instance=ExtResource("5_kkc8d")]
-position = Vector2(-373, 116)
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
 
-[node name="RigidBody2D15" parent="." instance=ExtResource("5_kkc8d")]
-position = Vector2(-631, 186)
-
-[node name="RigidBody2D16" parent="." instance=ExtResource("5_kkc8d")]
-position = Vector2(-701, 355)
-
-[node name="Enemies" type="Node" parent="."]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
