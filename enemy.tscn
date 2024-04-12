@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckfgi81vi2w68"]
+
+[ext_resource type="PackedScene" uid="uid://m53m1uhctp77" path="res://Objects/Character.tscn" id="2_bx72d"]
+[ext_resource type="PackedScene" uid="uid://bm48kc742smsm" path="res://Objects/rigid_body_2d.tscn" id="2_hrci5"]
+
+[sub_resource type="GDScript" id="GDScript_1kgd5"]
+script/source = "extends Node2D
+
+func _process(delta):
+	pass
+"
+
+[node name="Enemy" type="Node2D"]
+script = SubResource("GDScript_1kgd5")
+
+[node name="RigidBody2D" parent="." instance=ExtResource("2_hrci5")]
+position = Vector2(933, 499)
+
+[node name="Character" parent="." instance=ExtResource("2_bx72d")]

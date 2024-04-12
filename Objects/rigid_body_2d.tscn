@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm48kc742smsm"]
+
+[ext_resource type="Texture2D" uid="uid://bhgg5djceo1vc" path="res://Sprites/katyusha-le-rookie-11x vec.png" id="1_2vssp"]
+[ext_resource type="Script" path="res://Scripts/rigid_body_2d.gd" id="1_6hhyi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b1vit"]
+size = Vector2(101, 108)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_6hhyi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_b1vit")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.156534, 0.157955)
+texture = ExtResource("1_2vssp")
