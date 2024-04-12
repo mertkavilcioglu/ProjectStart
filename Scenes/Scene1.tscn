@@ -74,7 +74,7 @@ position = Vector2(368, 358)
 scale = Vector2(0.165, 0.165)
 zoom = Vector2(0.75, 0.75)
 
-[node name="Player" parent="." instance=ExtResource("2_gws4f")]
+[node name="Character" parent="." instance=ExtResource("2_gws4f")]
 z_index = 1
 position = Vector2(368, 358)
 scale = Vector2(0.165, 0.165)
