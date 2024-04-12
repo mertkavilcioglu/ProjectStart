@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://cd7fb6f6cqwlk"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_e71l8"]
+[ext_resource type="VideoStream" path="res://Background/Untitled-Project.ogv" id="1_mw1l0"]
+[ext_resource type="FontFile" uid="uid://cjiwq6jw81htl" path="res://ChiKareGo2.ttf" id="3_uvt57"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_73hl3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e71l8")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_mw1l0")
+autoplay = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VideoStreamPlayer"]
+layout_mode = 0
+offset_left = 1059.0
+offset_top = 595.0
+offset_right = 1137.0
+offset_bottom = 637.0
+
+[node name="BackButton" type="Button" parent="VideoStreamPlayer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_uvt57")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_73hl3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_73hl3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_73hl3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_73hl3")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_73hl3")
+text = "Back"
+
+[connection signal="pressed" from="VideoStreamPlayer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
