@@ -1,0 +1,473 @@
+[gd_scene load_steps=4 format=3 uid="uid://n83jjoowltlj"]
+
+[ext_resource type="PackedScene" uid="uid://m53m1uhctp77" path="res://Objects/Character.tscn" id="2_gws4f"]
+[ext_resource type="Texture2D" uid="uid://cqxx241s288pl" path="res://Sprites/5436446554_9244788c36_b.jpg" id="2_mlvij"]
+[ext_resource type="PackedScene" uid="uid://bk2ffeksoqseg" path="res://Scenes/laser.tscn" id="3_v8sfg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(368, 358)
+scale = Vector2(0.165, 0.165)
+zoom = Vector2(0.75, 0.75)
+
+[node name="Character" parent="." instance=ExtResource("2_gws4f")]
+z_index = 1
+position = Vector2(368, 358)
+scale = Vector2(0.165, 0.165)
+
+[node name="Background" type="Node" parent="."]
+
+[node name="54364465549244788c36B2" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B3" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround2" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B4" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround3" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B5" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround4" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B6" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround5" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B7" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround6" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B8" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround7" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B9" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround8" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B10" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround9" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B11" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround10" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B12" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround11" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B13" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround12" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B14" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround13" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, -3263)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B15" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround14" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, -2239)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B16" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround15" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, -1215)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B17" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround16" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, -191)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B18" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround17" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B19" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround18" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B20" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround19" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B21" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-2004, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround20" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-3028, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B22" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround21" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B23" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround22" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B24" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround23" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B25" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(44, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround24" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(-980, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B26" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround25" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B27" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround26" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B28" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround27" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B29" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(2092, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround28" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(1068, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B30" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround29" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, 833)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B31" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround30" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, 1857)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B32" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround31" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, 2881)
+texture = ExtResource("2_mlvij")
+
+[node name="54364465549244788c36B33" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(4140, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="BackGround32" type="Sprite2D" parent="Background"]
+light_mask = 0
+z_index = -3
+texture_repeat = 2
+position = Vector2(3116, 3905)
+texture = ExtResource("2_mlvij")
+
+[node name="Laser" parent="." instance=ExtResource("3_v8sfg")]
+position = Vector2(353, 242)
+speed = 200.0
+
+[node name="Lasers" type="Node" parent="."]

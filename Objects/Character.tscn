@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://m53m1uhctp77"]
+
+[ext_resource type="Script" path="res://Scripts/CharacterController.gd" id="1_6r0f5"]
+[ext_resource type="Texture2D" uid="uid://dwsiklouhket1" path="res://Sprites/png ship FiXED.png" id="2_1okut"]
+[ext_resource type="PackedScene" uid="uid://caq61xx2lvglr" path="res://Particles/line_2d.tscn" id="3_ulxtw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmuay"]
+size = Vector2(616, 703.077)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2xv8"]
+size = Vector2(548, 508)
+
+[node name="Character" type="CharacterBody2D"]
+collision_mask = 5
+script = ExtResource("1_6r0f5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1okut")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 9.49998)
+scale = Vector2(1, 0.994201)
+shape = SubResource("RectangleShape2D_jmuay")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Engine1" type="Node2D" parent="."]
+position = Vector2(-300, -48)
+
+[node name="Line2D2" parent="Engine1" instance=ExtResource("3_ulxtw")]
+top_level = true
+
+[node name="Engine2" type="Node2D" parent="."]
+position = Vector2(-300, 52)
+
+[node name="Line2D" parent="Engine2" instance=ExtResource("3_ulxtw")]
+top_level = true
+
+[node name="Muzzle" type="Node2D" parent="."]
+position = Vector2(305, 1)
+
+[node name="TakeDamageBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TakeDamageBox"]
+shape = SubResource("RectangleShape2D_e2xv8")
+debug_color = Color(0.878431, 0.313726, 0.352941, 0.419608)

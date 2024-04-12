@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://caq61xx2lvglr"]
+
+[ext_resource type="Script" path="res://Scripts/line_2d.gd" id="1_1whji"]
+
+[sub_resource type="Curve" id="Curve_qiuey"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_u5ess"]
+colors = PackedColorArray(0, 0.599279, 0.698353, 1, 1, 1, 1, 1)
+
+[node name="Line2D" type="Line2D"]
+z_index = -1
+width_curve = SubResource("Curve_qiuey")
+gradient = SubResource("Gradient_u5ess")
+script = ExtResource("1_1whji")
+MAX_LENGTH = 15
