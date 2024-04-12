@@ -1,31 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://inmklbs8atec"]
+[gd_scene load_steps=6 format=3 uid="uid://inmklbs8atec"]
 
 [ext_resource type="Script" path="res://CharacterUP.gd" id="1_p3kfl"]
 [ext_resource type="Texture2D" uid="uid://yfvxuaoysj6s" path="res://uzaygemisi/kanatlar/kanat lvl1.png" id="2_l72di"]
 [ext_resource type="Texture2D" uid="uid://q6u6hc5tqu4t" path="res://uzaygemisi/go╠êvdeler/go╠êvde lvl1.png" id="3_barr6"]
+[ext_resource type="PackedScene" uid="uid://caq61xx2lvglr" path="res://Particles/line_2d.tscn" id="4_k0er6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f4uun"]
 radius = 44.0
 height = 94.0
 
 [node name="Character" type="CharacterBody2D"]
-position = Vector2(337, 8)
 script = ExtResource("1_p3kfl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(500, 0)
 shape = SubResource("CapsuleShape2D_f4uun")
 
 [node name="wing" type="Sprite2D" parent="."]
-position = Vector2(500, 0)
 texture = ExtResource("2_l72di")
 
 [node name="body" type="Sprite2D" parent="."]
-position = Vector2(500, 0)
 scale = Vector2(1.037, 1)
 texture = ExtResource("3_barr6")
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Upgrade" type="Control" parent="."]
 layout_mode = 3
@@ -77,6 +72,21 @@ offset_top = -300.0
 offset_right = -350.0
 offset_bottom = -150.0
 text = "get level"
+
+[node name="Engine1" type="Node2D" parent="."]
+position = Vector2(-5, 43)
+
+[node name="Line2D2" parent="Engine1" instance=ExtResource("4_k0er6")]
+top_level = true
+
+[node name="Engine2" type="Node2D" parent="."]
+position = Vector2(5, 43)
+
+[node name="Line2D2" parent="Engine2" instance=ExtResource("4_k0er6")]
+top_level = true
+
+[node name="Muzzle" type="Node2D" parent="."]
+position = Vector2(0, -48)
 
 [connection signal="pressed" from="Upgrade/NewLevel/health" to="." method="_on_health_pressed"]
 [connection signal="pressed" from="Upgrade/NewLevel/speed" to="." method="_on_speed_pressed"]
