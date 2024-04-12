@@ -1,1 +1,9 @@
 res://CharacterUP.tscn
+res://CharacterUP.gd
+res://Objects/Character.tscn
+res://Scripts/CharacterController.gd
+res://Scenes/CombatScene.tscn
+res://Scenes/laser.tscn
+res://Scenes/enemy.tscn
+res://Objects/rigid_body_2d.tscn
+res://Scenes/Scene1.tscn

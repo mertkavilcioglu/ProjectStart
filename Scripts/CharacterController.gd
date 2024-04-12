@@ -7,13 +7,10 @@ var MousePosition = null
 @onready var CanBoost:bool = true
 @onready var BoostRefuel:bool = false
 @onready var BoostFuel:float = 100.0
-
 @onready var muzzle=$Muzzle 
 var laser_scene = preload("res://Scenes/laser.tscn")
 signal laser_shot(laser)
-
 var BoostCD:int = 3
-
 var shoot_bas=false
 
 func _process(delta): 
@@ -29,7 +26,6 @@ func _physics_process(delta):
 	if BoostFuel <100:
 		BoostFuel += 10*delta
 	
-
 	var Motion = Vector2()
 	Motion.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
 	Motion.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
@@ -60,23 +56,17 @@ func _physics_process(delta):
 				BoostFuel += 50*delta
 			else:
 				BoostRefuel = false
-
 	else:
 		MaxSpeed = 500
-	
 	if Input.is_action_just_released("Turbo"):
 		if BoostFuel > 20:
 			CanBoost = true
 # Ise yariyor ancak, fuel ilk kez 20nin altina dusunce, tekrar 20yi gectigi zaman
 # ilk boostu algilamiyor, ikinciyi basinca boost oluyor ama onda sorun yok
-		
 	move_and_slide()
-	
 	MousePosition = get_global_mouse_position()
 	look_at(MousePosition)
-	
 	Cam.position = lerp(Cam.position, position, 5 * delta)
-	
 	
 func Boost_True():
 	CanBoost = true
