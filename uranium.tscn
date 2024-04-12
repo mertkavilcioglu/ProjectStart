@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3uhp55c0b8ok"]
+
+[ext_resource type="Script" path="res://uranium.gd" id="1_6w4mq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8nvid"]
+radius = 11.0
+
+[node name="Uranium" type="Area2D"]
+script = ExtResource("1_6w4mq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_8nvid")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
