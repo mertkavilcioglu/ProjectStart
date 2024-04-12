@@ -1,11 +1,4 @@
-res://NPC/Frog.tscn
-res://Player/Player.gd
-res://Background/BG.gd
-res://NPC/Frog.gd
-res://Player/Player.tscn
 res://uranium.tscn
-res://uranium.gd
-res://world.tscn
-res://world.gd
-res://NPC/Enemy.tscn
+res://Player/Player.tscn
+res://Enemy/Enemy.tscn
 res://interact_area.tscn
