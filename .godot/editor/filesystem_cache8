@@ -1,32 +1,32 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712845770
-enemy.gd::GDScript::-1::1712677128::0::1::::<>Area2D<>::
-enemy.tscn::PackedScene::5485432055246054671::1711791585::0::1::::<><>::uid://m53m1uhctp77::::res://Objects/Character.tscn<>uid://bm48kc742smsm::::res://Objects/rigid_body_2d.tscn
-export_presets.cfg::TextFile::-1::1710959259::0::1::::<><>::
-laserRed01.png::CompressedTexture2D::7984542405477050148::1712677128::1712677128::1::::<><>::
-README.md::TextFile::-1::1711566361::0::1::::<><>::
-::res://Objects/::1712826111
-Character.tscn::PackedScene::905920358427179572::1712824972::0::1::::<><>::res://Scripts/CharacterController.gd<>uid://dwsiklouhket1::::res://Sprites/png ship FiXED.png<>uid://caq61xx2lvglr::::res://Particles/line_2d.tscn
-rigid_body_2d.tscn::PackedScene::3290575436752437376::1712824944::0::1::::<><>::uid://bhgg5djceo1vc::::res://Sprites/katyusha-le-rookie-11x vec.png<>res://Scripts/rigid_body_2d.gd
-::res://Particles/::1712826111
-line_2d.tscn::PackedScene::4807801313678289943::1712003512::0::1::::<><>::res://Scripts/line_2d.gd
-toppng.com-download-blue-glow-effect-1024x1024.png::CompressedTexture2D::2882899119315027955::1711791585::1711791904::1::::<><>::
-::res://Scenes/::1712826111
-enemy.tscn::PackedScene::5147190764227462171::1712824944::0::1::::<><>::res://enemy.gd<>uid://bhgg5djceo1vc::::res://Sprites/katyusha-le-rookie-11x vec.png
-laser.tscn::PackedScene::1881788047753721134::1712824944::0::1::::<><>::res://Scripts/laser.gd<>uid://dl01inmwr6huy::::res://laserRed01.png
-main.tscn::PackedScene::7090070022995739789::1712600536::0::1::::<><>::uid://bm48kc742smsm::::res://Objects/rigid_body_2d.tscn<>uid://m53m1uhctp77::::res://Objects/Character.tscn
-Scene1.tscn::PackedScene::982296076124361795::1712824953::0::1::::<><>::res://Scripts/Game.gd<>uid://m53m1uhctp77::::res://Objects/Character.tscn<>uid://cqxx241s288pl::::res://Sprites/5436446554_9244788c36_b.jpg<>uid://bm48kc742smsm::::res://Objects/rigid_body_2d.tscn
-::res://Scripts/::1712826111
-CharacterController.gd::GDScript::-1::1712824894::0::1::::<>CharacterBody2D<>::
-Game.gd::GDScript::-1::1712677128::0::1::::<>Node2D<>::
-laser.gd::GDScript::-1::1712677128::0::1::::<>Area2D<>::
-line_2d.gd::GDScript::-1::1711986107::0::1::::Trails<>Line2D<>::
-rigid_body_2d.gd::GDScript::-1::1712677128::0::1::::Enemy<>RigidBody2D<>::
-Scene1.gd::GDScript::-1::1712677128::0::1::::<>Node2D<>::
-::res://Sprites/::1712826111
-5436446554_9244788c36_b.jpg::CompressedTexture2D::5944789825404479365::1710876649::1710876658::1::::<><>::
-icon.svg::CompressedTexture2D::3910679558373595750::1710572919::1710583012::1::::<><>::
-katyusha-le-rookie-11x vec.png::CompressedTexture2D::2890546903027519460::1710583634::1710583634::1::::<><>::
-png ship FiXED.png::CompressedTexture2D::8741079604872846832::1712677128::1712677128::1::::<><>::
-png ship.png::CompressedTexture2D::643367440661112601::1710868124::1710868125::1::::<><>::
-Space-PNG-Pic.png::CompressedTexture2D::705640811673736246::1710582983::1710583012::1::::<><>::
+::res://::1712913638
+enemy.gd::GDScript::-1::1712912024::0::1::::<>Area2D<>::
+enemy.tscn::PackedScene::5485432055246054671::1712912024::0::1::::<><>::uid://m53m1uhctp77::::res://Objects/Character.tscn<>uid://bm48kc742smsm::::res://Objects/rigid_body_2d.tscn
+export_presets.cfg::TextFile::-1::1712912024::0::1::::<><>::
+laserRed01.png::CompressedTexture2D::7984542405477050148::1712912024::1712912024::1::::<><>::
+README.md::TextFile::-1::1712913459::0::1::::<><>::
+::res://Objects/::1712913568
+Character.tscn::PackedScene::905920358427179572::1712912026::0::1::::<><>::res://Scripts/CharacterController.gd<>uid://dwsiklouhket1::::res://Sprites/png ship FiXED.png<>uid://caq61xx2lvglr::::res://Particles/line_2d.tscn
+rigid_body_2d.tscn::PackedScene::3290575436752437376::1712912026::0::1::::<><>::uid://bhgg5djceo1vc::::res://Sprites/katyusha-le-rookie-11x vec.png<>res://Scripts/rigid_body_2d.gd
+::res://Particles/::1712913568
+line_2d.tscn::PackedScene::4807801313678289943::1712912026::0::1::::<><>::res://Scripts/line_2d.gd
+toppng.com-download-blue-glow-effect-1024x1024.png::CompressedTexture2D::2882899119315027955::1712912026::1712912026::1::::<><>::
+::res://Scenes/::1712913568
+enemy.tscn::PackedScene::5147190764227462171::1712912024::0::1::::<><>::res://enemy.gd<>uid://bhgg5djceo1vc::::res://Sprites/katyusha-le-rookie-11x vec.png
+laser.tscn::PackedScene::1881788047753721134::1712912024::0::1::::<><>::res://Scripts/laser.gd<>uid://dl01inmwr6huy::::res://laserRed01.png
+main.tscn::PackedScene::7090070022995739789::1712912024::0::1::::<><>::uid://bm48kc742smsm::::res://Objects/rigid_body_2d.tscn<>uid://m53m1uhctp77::::res://Objects/Character.tscn
+Scene1.tscn::PackedScene::982296076124361795::1712912024::0::1::::<><>::res://Scripts/Game.gd<>uid://m53m1uhctp77::::res://Objects/Character.tscn<>uid://cqxx241s288pl::::res://Sprites/5436446554_9244788c36_b.jpg<>uid://bm48kc742smsm::::res://Objects/rigid_body_2d.tscn
+::res://Scripts/::1712913568
+CharacterController.gd::GDScript::-1::1712912026::0::1::::<>CharacterBody2D<>::
+Game.gd::GDScript::-1::1712912026::0::1::::<>Node2D<>::
+laser.gd::GDScript::-1::1712912026::0::1::::<>Area2D<>::
+line_2d.gd::GDScript::-1::1712912026::0::1::::Trails<>Line2D<>::
+rigid_body_2d.gd::GDScript::-1::1712912026::0::1::::Enemy<>RigidBody2D<>::
+Scene1.gd::GDScript::-1::1712912026::0::1::::<>Node2D<>::
+::res://Sprites/::1712913568
+5436446554_9244788c36_b.jpg::CompressedTexture2D::5944789825404479365::1712912026::1712912026::1::::<><>::
+icon.svg::CompressedTexture2D::3910679558373595750::1712912026::1712912026::1::::<><>::
+katyusha-le-rookie-11x vec.png::CompressedTexture2D::2890546903027519460::1712912026::1712912026::1::::<><>::
+png ship FiXED.png::CompressedTexture2D::8741079604872846832::1712912026::1712912026::1::::<><>::
+png ship.png::CompressedTexture2D::643367440661112601::1712912026::1712912026::1::::<><>::
+Space-PNG-Pic.png::CompressedTexture2D::705640811673736246::1712912026::1712912026::1::::<><>::
