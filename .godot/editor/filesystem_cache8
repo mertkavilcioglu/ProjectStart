@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1712845728
+icon.svg::CompressedTexture2D::5725771921021332239::1711977770::1711977776::1::::<><>::
+interact_area.gd::GDScript::-1::1712761964::0::1::::Interactable<>Area2D<>::
+interact_area.tscn::PackedScene::3280402898649034056::1712830254::0::1::::<><>::res://interact_area.gd
+uranium.gd::GDScript::-1::1712829890::0::1::::<>Area2D<>::
+uranium.tscn::PackedScene::9166290656052338114::1712830194::0::1::::<><>::res://uranium.gd
+::res://Enemy/::1712829928
+Enemy.gd::GDScript::-1::1712829524::0::1::::<>CharacterBody2D<>::
+Enemy.tscn::PackedScene::4013284071616201199::1712829928::0::1::::<><>::res://Enemy/Enemy.gd
+::res://Player/::1712830208
+Player.gd::GDScript::-1::1712829890::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::8105875457902957292::1712830208::0::1::::<><>::res://Player/Player.gd
