@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="upgrade system"
-run/main_scene="res://Character.tscn"
+run/main_scene="res://CharacterUP.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 
 [rendering]
