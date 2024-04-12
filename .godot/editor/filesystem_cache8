@@ -1,0 +1,19 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1712915947
+Character.gd::GDScript::-1::1712912039::0::1::::<>CharacterBody2D<>::
+Character.tscn::PackedScene::589094701922897510::1712912039::0::1::::<><>::res://Character.gd<>uid://q6u6hc5tqu4t::::res://uzaygemisi/gövdeler/gövde lvl1.png<>uid://yfvxuaoysj6s::::res://uzaygemisi/kanatlar/kanat lvl1.png
+export_presets.cfg::TextFile::-1::1712912023::0::1::::<><>::
+README.md::TextFile::-1::1712913459::0::1::::<><>::
+::res://uzaygemisi/::1712915935
+::res://uzaygemisi/go╠êvdeler/::1712915935
+go╠êvde lvl1.png::CompressedTexture2D::1188287280192918189::1712912040::1712915948::1::::<><>::
+go╠êvde lvl2.png::CompressedTexture2D::3372448484761685588::1712912040::1712915948::1::::<><>::
+go╠êvde lvl3.png::CompressedTexture2D::1067828698043290671::1712912040::1712915948::1::::<><>::
+go╠êvde lvl4.png::CompressedTexture2D::4671271489643155078::1712912040::1712915948::1::::<><>::
+go╠êvde lvl5.png::CompressedTexture2D::7429173838793680571::1712912040::1712915948::1::::<><>::
+::res://uzaygemisi/kanatlar/::1712915935
+kanat lvl1.png::CompressedTexture2D::1696171317326874276::1712912040::1712912040::1::::<><>::
+kanat lvl2 go╠êvde 1.png::CompressedTexture2D::2900903313853208417::1712912040::1712915948::1::::<><>::
+kanat lvl3 go╠êvde 1.png::CompressedTexture2D::8637369573439767321::1712912040::1712915948::1::::<><>::
+kanat lvl4 go╠êvde 1.png::CompressedTexture2D::2650883156812839070::1712912040::1712915948::1::::<><>::
+kanat lvl5 go╠êvde 1.png::CompressedTexture2D::757711291239830914::1712912040::1712915948::1::::<><>::
