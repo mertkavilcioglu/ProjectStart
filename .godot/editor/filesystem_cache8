@@ -1,44 +1,47 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712850105
-icon.svg::CompressedTexture2D::8109417046477381051::1712637545::1712637556::1::::<><>::
-::res://Menus/::1712850138
-main_menu.tscn::PackedScene::2491070560617598181::1712850138::0::1::::<><>::uid://bytqekdwnabea::::res://Sprites/background/starsLayer2.png<>uid://blgynkbbwn8pj::::res://Sprites/background/starsLayer3.png<>uid://dqpfaxtd1uy15::::res://Sprites/background/starsLayer1.png
-options_menu.tscn::PackedScene::5921788066902643366::1712850138::0::1::::<><>::
-::res://Sprites/::1712850715
-BGStatic.png::CompressedTexture2D::5877160624191961755::1712850716::1712850724::1::::<><>::
-::res://Sprites/background/::1712847683
-nebula max znr.png::CompressedTexture2D::9087597484868003410::1712847621::1712847622::1::::<><>::
-starsLayer1.png::CompressedTexture2D::8313554038122753234::1712847621::1712847663::1::::<><>::
-starsLayer2.png::CompressedTexture2D::4111155254277764700::1712847621::1712847652::1::::<><>::
-starsLayer3.png::CompressedTexture2D::3172365180236665011::1712847621::1712847683::1::::<><>::
-starsLayer3_512x512.png::CompressedTexture2D::3340511738728731244::1712847621::1712847678::1::::<><>::
-uzay arkaplan max znrlk.png::CompressedTexture2D::2656228473320750957::1712847621::1712847624::1::::<><>::
-uzay ve nebula max znrkl.png::CompressedTexture2D::5393830554240215564::1712847621::1712847624::1::::<><>::
-::res://Sprites/gezegenler/::1712847621
-gezegen1.png::CompressedTexture2D::5954973793903626051::1712847621::1712847621::1::::<><>::
-gezegen2.png::CompressedTexture2D::4846559367383006312::1712847621::1712847621::1::::<><>::
-gezegen 3.png::CompressedTexture2D::5334084285625302017::1712847621::1712847621::1::::<><>::
-::res://Sprites/uzaygemisi/::1712847621
-::res://Sprites/uzaygemisi/dman gemiler/::1712847622
-healer max znrlk.png::CompressedTexture2D::7331522764654350510::1712847621::1712847622::1::::<><>::
-Kamikze mzx znrlk.png::CompressedTexture2D::3401038335667345941::1712847621::1712847622::1::::<><>::
-::res://Sprites/uzaygemisi/d仧man gemiler/::1712847621
-healer 128x128.png::CompressedTexture2D::1981629833367384770::1712847621::1712847621::1::::<><>::
-HUNTER.png::CompressedTexture2D::4935940230936888260::1712847621::1712847621::1::::<><>::
-Kamikze 128x 128.png::CompressedTexture2D::746610272470362352::1712847621::1712847621::1::::<><>::
-::res://Sprites/uzaygemisi/g”vdeler/::1712847621
-g”vde lvl1.png::CompressedTexture2D::3405637901787742998::1712847621::1712847621::1::::<><>::
-g”vde lvl2.png::CompressedTexture2D::1033537567746915865::1712847621::1712847621::1::::<><>::
-g”vde lvl3.png::CompressedTexture2D::4588034963519242340::1712847621::1712847621::1::::<><>::
-g”vde lvl4.png::CompressedTexture2D::318161191919175179::1712847621::1712847621::1::::<><>::
-g”vde lvl5.png::CompressedTexture2D::2513689915473210479::1712847621::1712847621::1::::<><>::
-::res://Sprites/uzaygemisi/kanatlar/::1712847621
-kanat lvl1.png::CompressedTexture2D::3573868804886464688::1712847621::1712847621::1::::<><>::
-kanat lvl2 g”vde 1.png::CompressedTexture2D::1583272385770823992::1712847621::1712847621::1::::<><>::
-kanat lvl2.png::CompressedTexture2D::3644255600048786457::1712847621::1712847621::1::::<><>::
-kanat lvl3 g”vde 1.png::CompressedTexture2D::4071346052024858727::1712847621::1712847621::1::::<><>::
-kanat lvl3.png::CompressedTexture2D::3875757063045248325::1712847621::1712847621::1::::<><>::
-kanat lvl4 g”vde 1.png::CompressedTexture2D::8239069613468857018::1712847621::1712847621::1::::<><>::
-kanat lvl4.png::CompressedTexture2D::5229204453884754728::1712847621::1712847621::1::::<><>::
-kanat lvl5 g”vde 1.png::CompressedTexture2D::3943467661295345461::1712847621::1712847621::1::::<><>::
-kanat lvl5.png::CompressedTexture2D::661806292303126528::1712847621::1712847621::1::::<><>::
+::res://::1712915808
+export_presets.cfg::TextFile::-1::1712912023::0::1::::<><>::
+icon.svg::CompressedTexture2D::8109417046477381051::1712912038::1712912038::1::::<><>::
+README.md::TextFile::-1::1712913459::0::1::::<><>::
+::res://Menus/::1712915732
+background.tscn::PackedScene::5086623374241556541::1712912039::0::1::::<><>::uid://cpy68hg2deo24::::res://Sprites/BGStatic.png<>uid://bytqekdwnabea::::res://Sprites/background/starsLayer2.png<>uid://blgynkbbwn8pj::::res://Sprites/background/starsLayer3.png<>uid://dqpfaxtd1uy15::::res://Sprites/background/starsLayer1.png
+main_menu.tscn::PackedScene::2491070560617598181::1712912039::0::1::::<><>::uid://cep87dbpwhpf6::::res://Menus/background.tscn
+options_menu.tscn::PackedScene::5921788066902643366::1712912039::0::1::::<><>::
+::res://Sprites/::1712915732
+BGStatic.png::CompressedTexture2D::5877160624191961755::1712912039::1712912039::1::::<><>::
+::res://Sprites/background/::1712915732
+nebula max ┬ç┬öz┬ün┬ür.png::CompressedTexture2D::9087597484868003410::1712912039::1712915809::1::::<><>::
+starsLayer1.png::CompressedTexture2D::8313554038122753234::1712912039::1712912039::1::::<><>::
+starsLayer2.png::CompressedTexture2D::4111155254277764700::1712912039::1712912039::1::::<><>::
+starsLayer3.png::CompressedTexture2D::3172365180236665011::1712912039::1712912039::1::::<><>::
+starsLayer3_512x512.png::CompressedTexture2D::3340511738728731244::1712912039::1712912039::1::::<><>::
+uzay arkaplan max ┬ç┬öz┬ün┬ürl┬ük.png::CompressedTexture2D::2656228473320750957::1712912039::1712915810::1::::<><>::
+uzay ve nebula max ┬ç┬öz┬ün┬ürk┬ül.png::CompressedTexture2D::5393830554240215564::1712912039::1712915810::1::::<><>::
+::res://Sprites/gezegenler/::1712915732
+gezegen1.png::CompressedTexture2D::5954973793903626051::1712912039::1712912039::1::::<><>::
+gezegen2.png::CompressedTexture2D::4846559367383006312::1712912039::1712912039::1::::<><>::
+gezegen 3.png::CompressedTexture2D::5334084285625302017::1712912039::1712912039::1::::<><>::
+::res://Sprites/uzaygemisi/::1712915732
+::res://Sprites/uzaygemisi/dõ╗ğman gemiler/::1712915732
+healer 128x128.png::CompressedTexture2D::1981629833367384770::1712912039::1712915808::1::::<><>::
+HUNTER.png::CompressedTexture2D::4935940230936888260::1712912039::1712915808::1::::<><>::
+Kamikze 128x 128.png::CompressedTexture2D::746610272470362352::1712912039::1712915808::1::::<><>::
+::res://Sprites/uzaygemisi/d┬ü┬şman gemiler/::1712915732
+healer max ┬ç┬öz┬ün┬ürl┬ük.png::CompressedTexture2D::7331522764654350510::1712912039::1712915809::1::::<><>::
+Kamikze mzx ┬ç┬öz┬ün┬ürl┬ük.png::CompressedTexture2D::3401038335667345941::1712912039::1712915809::1::::<><>::
+::res://Sprites/uzaygemisi/gÔÇØvdeler/::1712915732
+gÔÇØvde lvl1.png::CompressedTexture2D::3405637901787742998::1712912039::1712915808::1::::<><>::
+gÔÇØvde lvl2.png::CompressedTexture2D::1033537567746915865::1712912039::1712915808::1::::<><>::
+gÔÇØvde lvl3.png::CompressedTexture2D::4588034963519242340::1712912039::1712915808::1::::<><>::
+gÔÇØvde lvl4.png::CompressedTexture2D::318161191919175179::1712912039::1712915808::1::::<><>::
+gÔÇØvde lvl5.png::CompressedTexture2D::2513689915473210479::1712912039::1712915808::1::::<><>::
+::res://Sprites/uzaygemisi/kanatlar/::1712915732
+kanat lvl1.png::CompressedTexture2D::3573868804886464688::1712912039::1712912039::1::::<><>::
+kanat lvl2 gÔÇØvde 1.png::CompressedTexture2D::1583272385770823992::1712912039::1712915808::1::::<><>::
+kanat lvl2.png::CompressedTexture2D::3644255600048786457::1712912039::1712912039::1::::<><>::
+kanat lvl3 gÔÇØvde 1.png::CompressedTexture2D::4071346052024858727::1712912039::1712915808::1::::<><>::
+kanat lvl3.png::CompressedTexture2D::3875757063045248325::1712912039::1712912039::1::::<><>::
+kanat lvl4 gÔÇØvde 1.png::CompressedTexture2D::8239069613468857018::1712912039::1712915808::1::::<><>::
+kanat lvl4.png::CompressedTexture2D::5229204453884754728::1712912039::1712912039::1::::<><>::
+kanat lvl5 gÔÇØvde 1.png::CompressedTexture2D::3943467661295345461::1712912039::1712915808::1::::<><>::
+kanat lvl5.png::CompressedTexture2D::661806292303126528::1712912039::1712912039::1::::<><>::
