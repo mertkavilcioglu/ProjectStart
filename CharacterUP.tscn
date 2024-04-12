@@ -16,9 +16,11 @@ script = ExtResource("1_p3kfl")
 shape = SubResource("CapsuleShape2D_f4uun")
 
 [node name="wing" type="Sprite2D" parent="."]
+rotation = 1.5708
 texture = ExtResource("2_l72di")
 
 [node name="body" type="Sprite2D" parent="."]
+rotation = 1.5708
 scale = Vector2(1.037, 1)
 texture = ExtResource("3_barr6")
 
@@ -74,19 +76,19 @@ offset_bottom = -150.0
 text = "get level"
 
 [node name="Engine1" type="Node2D" parent="."]
-position = Vector2(-5, 43)
+position = Vector2(-43, -6)
 
 [node name="Line2D2" parent="Engine1" instance=ExtResource("4_k0er6")]
 top_level = true
 
 [node name="Engine2" type="Node2D" parent="."]
-position = Vector2(5, 43)
+position = Vector2(-43, 6)
 
 [node name="Line2D2" parent="Engine2" instance=ExtResource("4_k0er6")]
 top_level = true
 
 [node name="Muzzle" type="Node2D" parent="."]
-position = Vector2(0, -48)
+position = Vector2(48, 0)
 
 [connection signal="pressed" from="Upgrade/NewLevel/health" to="." method="_on_health_pressed"]
 [connection signal="pressed" from="Upgrade/NewLevel/speed" to="." method="_on_speed_pressed"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://n83jjoowltlj"]
 
 [ext_resource type="Script" path="res://Scripts/Game.gd" id="1_sxv6x"]
-[ext_resource type="PackedScene" uid="uid://m53m1uhctp77" path="res://Objects/Character.tscn" id="2_qf7vw"]
 [ext_resource type="Texture2D" uid="uid://cqxx241s288pl" path="res://Sprites/5436446554_9244788c36_b.jpg" id="3_qbolb"]
 [ext_resource type="PackedScene" uid="uid://bm48kc742smsm" path="res://Objects/rigid_body_2d.tscn" id="4_5x8st"]
+[ext_resource type="PackedScene" uid="uid://inmklbs8atec" path="res://CharacterUP.tscn" id="4_368m5"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_sxv6x")
@@ -12,11 +12,6 @@ script = ExtResource("1_sxv6x")
 position = Vector2(368, 358)
 scale = Vector2(0.165, 0.165)
 zoom = Vector2(0.75, 0.75)
-
-[node name="Character" parent="." instance=ExtResource("2_qf7vw")]
-z_index = 1
-position = Vector2(368, 358)
-scale = Vector2(0.165, 0.165)
 
 [node name="Background" type="Node" parent="."]
 
@@ -480,3 +475,6 @@ position = Vector2(-631, 186)
 position = Vector2(-701, 355)
 
 [node name="Enemies" type="Node" parent="."]
+
+[node name="Character" parent="." instance=ExtResource("4_368m5")]
+position = Vector2(374, 552)
