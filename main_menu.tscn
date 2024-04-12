@@ -1,0 +1,106 @@
+[gd_scene load_steps=9 format=3 uid="uid://dkwpukenjfga"]
+
+[ext_resource type="Texture2D" uid="uid://bim0v1xis2xr1" path="res://Background/yxiop7hoy5991.png" id="1_6j1ys"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_a2lkp"]
+[ext_resource type="FontFile" uid="uid://cjiwq6jw81htl" path="res://ChiKareGo2.ttf" id="3_vhn1p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dgjo8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qtbl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iribq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pg2ik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h8676"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a2lkp")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_6j1ys")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 440.0
+offset_right = 246.0
+offset_bottom = 626.0
+
+[node name="PlayButton" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vhn1p")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dgjo8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dgjo8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dgjo8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dgjo8")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dgjo8")
+text = "Play"
+alignment = 0
+
+[node name="UpgradeButton" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vhn1p")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4qtbl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4qtbl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4qtbl")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4qtbl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4qtbl")
+text = "Upgrade"
+alignment = 0
+
+[node name="OptionsButton" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vhn1p")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_iribq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iribq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iribq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iribq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iribq")
+text = "Options"
+alignment = 0
+
+[node name="CreditsButton" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vhn1p")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pg2ik")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pg2ik")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_pg2ik")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pg2ik")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pg2ik")
+text = "Credits"
+alignment = 0
+
+[node name="QuitButton" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vhn1p")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h8676")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_h8676")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h8676")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h8676")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h8676")
+text = "Quit"
+alignment = 0
+
+[connection signal="pressed" from="TextureRect/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/UpgradeButton" to="." method="_on_upgrade_button_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1712850171
+BackButton.gd::GDScript::-1::1712746710::0::1::::<>Button<>::
+ChiKareGo2.ttf::FontFile::5422421971876115597::1712260122::1712692388::1::::<><>::
+credits.gd::GDScript::-1::1712746966::0::1::::<>Control<>::
+credits.tscn::PackedScene::5049774994547651352::1712846012::0::1::::<><>::res://credits.gd<>res://Background/Untitled-Project.ogv<>uid://cjiwq6jw81htl::::res://ChiKareGo2.ttf
+default_env.tres::Environment::-1::1712260072::0::1::::<><>::
+first_scene.tscn::PackedScene::1766545608650374769::1712846012::0::1::::<><>::uid://wfdqldne18s6::::res://Background/3xnpuegoy5991.png<>uid://cjiwq6jw81htl::::res://ChiKareGo2.ttf
+icon.svg::CompressedTexture2D::1087641674445951627::1712687950::1712687956::1::::<><>::
+main_menu.gd::GDScript::-1::1712746848::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::232573935318651384::1712846012::0::1::::<><>::uid://bim0v1xis2xr1::::res://Background/yxiop7hoy5991.png<>res://main_menu.gd<>uid://cjiwq6jw81htl::::res://ChiKareGo2.ttf
+::res://Background/::1712745398
+3xnpuegoy5991.png::CompressedTexture2D::1554687755476120439::1712694662::1712694696::1::::<><>::
+5s6y3ogoy5991.png::CompressedTexture2D::7878559282636627191::1712694308::1712694348::1::::<><>::
+Untitled-Project.ogv::VideoStreamTheora::-1::1712745390::0::1::::<><>::
+yxiop7hoy5991.png::CompressedTexture2D::2974260793863473008::1712689092::1712689112::1::::<><>::
