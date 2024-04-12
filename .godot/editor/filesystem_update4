@@ -1,6 +1,1 @@
-res://Scenes/CombatScene.tscn
-res://Objects/Character.tscn
-res://Scenes/laser.tscn
-res://Scenes/enemy.tscn
-res://Objects/rigid_body_2d.tscn
-res://Scenes/Scene1.tscn
+res://CharacterUP.tscn
