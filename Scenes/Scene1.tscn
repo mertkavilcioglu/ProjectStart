@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://n83jjoowltlj"]
 
-[ext_resource type="PackedScene" uid="uid://inmklbs8atec" path="res://CharacterUP.tscn" id="2_k21hx"]
+[ext_resource type="PackedScene" uid="uid://inmklbs8atec" path="res://Objects/Character.tscn" id="2_k21hx"]
 [ext_resource type="Texture2D" uid="uid://cqxx241s288pl" path="res://Sprites/5436446554_9244788c36_b.jpg" id="2_mlvij"]
 
 [sub_resource type="GDScript" id="GDScript_kogl8"]

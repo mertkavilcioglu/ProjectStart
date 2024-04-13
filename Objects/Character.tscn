@@ -1,46 +1,104 @@
-[gd_scene load_steps=6 format=3 uid="uid://m53m1uhctp77"]
+[gd_scene load_steps=6 format=3 uid="uid://inmklbs8atec"]
 
-[ext_resource type="Script" path="res://Scripts/CharacterController.gd" id="1_6r0f5"]
-[ext_resource type="Texture2D" uid="uid://dwsiklouhket1" path="res://Sprites/png ship FiXED.png" id="2_1okut"]
-[ext_resource type="PackedScene" uid="uid://caq61xx2lvglr" path="res://Particles/line_2d.tscn" id="3_ulxtw"]
+[ext_resource type="Script" path="res://Scripts/Character.gd" id="1_bikhr"]
+[ext_resource type="Texture2D" uid="uid://yfvxuaoysj6s" path="res://uzaygemisi/kanatlar/kanat lvl1.png" id="2_l72di"]
+[ext_resource type="Texture2D" uid="uid://q6u6hc5tqu4t" path="res://uzaygemisi/go╠êvdeler/go╠êvde lvl1.png" id="3_barr6"]
+[ext_resource type="PackedScene" uid="uid://caq61xx2lvglr" path="res://Particles/line_2d.tscn" id="4_k0er6"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmuay"]
-size = Vector2(616, 703.077)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2xv8"]
-size = Vector2(548, 508)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f4uun"]
+radius = 44.0
+height = 94.0
 
 [node name="Character" type="CharacterBody2D"]
-collision_mask = 5
-script = ExtResource("1_6r0f5")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_1okut")
+script = ExtResource("1_bikhr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 9.49998)
-scale = Vector2(1, 0.994201)
-shape = SubResource("RectangleShape2D_jmuay")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
+shape = SubResource("CapsuleShape2D_f4uun")
+
+[node name="wing" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_l72di")
+
+[node name="body" type="Sprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(1.037, 1)
+texture = ExtResource("3_barr6")
+
+[node name="Upgrade" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -17.0
+offset_top = -22.0
+offset_right = 23.0
+offset_bottom = 18.0
+
+[node name="NewLevel" type="Panel" parent="Upgrade"]
+process_mode = 2
+visible = false
+layout_mode = 0
+offset_left = -250.0
+offset_top = -100.0
+offset_right = 250.0
+offset_bottom = 100.0
+
+[node name="health" type="Button" parent="Upgrade/NewLevel"]
+layout_mode = 0
+offset_left = 125.0
+offset_right = 250.0
+offset_bottom = 200.0
+text = "health"
+
+[node name="speed" type="Button" parent="Upgrade/NewLevel"]
+layout_mode = 0
+offset_right = 125.0
+offset_bottom = 200.0
+text = "speed"
+
+[node name="fuel" type="Button" parent="Upgrade/NewLevel"]
+layout_mode = 0
+offset_left = 250.0
+offset_right = 375.0
+offset_bottom = 200.0
+text = "fuel"
+
+[node name="damage" type="Button" parent="Upgrade/NewLevel"]
+layout_mode = 0
+offset_left = 375.0
+offset_right = 500.0
+offset_bottom = 200.0
+text = "damage"
+
+[node name="get_level" type="Button" parent="."]
+visible = false
+offset_left = -500.0
+offset_top = -300.0
+offset_right = -350.0
+offset_bottom = -150.0
+text = "get level"
 
 [node name="Engine1" type="Node2D" parent="."]
-position = Vector2(-300, -48)
+position = Vector2(-43, -6)
 
-[node name="Line2D2" parent="Engine1" instance=ExtResource("3_ulxtw")]
+[node name="Line2D2" parent="Engine1" instance=ExtResource("4_k0er6")]
 top_level = true
 
 [node name="Engine2" type="Node2D" parent="."]
-position = Vector2(-300, 52)
+position = Vector2(-43, 6)
 
-[node name="Line2D" parent="Engine2" instance=ExtResource("3_ulxtw")]
+[node name="Line2D2" parent="Engine2" instance=ExtResource("4_k0er6")]
 top_level = true
 
 [node name="Muzzle" type="Node2D" parent="."]
-position = Vector2(305, 1)
+position = Vector2(48, 0)
 
-[node name="TakeDamageBox" type="Area2D" parent="."]
-unique_name_in_owner = true
+[node name="Muzzle2" type="Node2D" parent="."]
+position = Vector2(0, 13)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TakeDamageBox"]
-shape = SubResource("RectangleShape2D_e2xv8")
-debug_color = Color(0.878431, 0.313726, 0.352941, 0.419608)
+[node name="Muzzle3" type="Node2D" parent="."]
+position = Vector2(0, -13)
+
+[connection signal="pressed" from="Upgrade/NewLevel/health" to="." method="_on_health_pressed"]
+[connection signal="pressed" from="Upgrade/NewLevel/speed" to="." method="_on_speed_pressed"]
+[connection signal="pressed" from="Upgrade/NewLevel/fuel" to="." method="_on_fuel_pressed"]
+[connection signal="pressed" from="Upgrade/NewLevel/damage" to="." method="_on_damage_pressed"]
+[connection signal="pressed" from="get_level" to="." method="_on_get_level_pressed"]
