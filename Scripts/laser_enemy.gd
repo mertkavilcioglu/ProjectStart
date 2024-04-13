@@ -13,8 +13,8 @@ func _on_visible_on_screen_notifier_2d_screen_exited():
 		
 	
 func _on_body_entered(body):
-	if body is Enemy:
-		var enemy = body
-		enemy.getHit()
+	if body is Player:
+		var player = body
+		player.playerGetHit()
 		queue_free()
-	
+

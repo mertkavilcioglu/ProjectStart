@@ -12,3 +12,5 @@ res://Scripts/rigid_body_2d.gd
 res://CharacterUP.gd
 res://Scripts/CharacterController.gd
 res://Scripts/Game.gd
+res://Scenes/laser_enemy.tscn
+res://Scripts/laser_enemy.gd

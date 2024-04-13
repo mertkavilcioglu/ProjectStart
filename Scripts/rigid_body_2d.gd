@@ -9,7 +9,7 @@ var playerDamage:int = 1
 @export var enemyMaxSpeed: float = 100.0
 @export var radius = 150
 
-var laser_scene = preload("res://Scenes/laser.tscn")
+var laser_scene = preload("res://Scenes/laser_enemy.tscn")
 @onready var muzzle1=$Muzzle 
 signal laser_shot(laser)
 

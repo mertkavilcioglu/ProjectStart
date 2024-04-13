@@ -61,8 +61,8 @@ func _physics_process(delta):
 	if Input.is_action_just_released("Turbo"):
 		if BoostFuel > 20:
 			CanBoost = true
-# Ise yariyor ancak, fuel ilk kez 20nin altina dusunce, tekrar 20yi gectigi zaman
-# ilk boostu algilamiyor, ikinciyi basinca boost oluyor ama onda sorun yok
+
+
 	move_and_slide()
 	MousePosition = get_global_mouse_position()
 	look_at(MousePosition)
