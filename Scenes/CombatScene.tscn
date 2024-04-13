@@ -465,16 +465,16 @@ texture = ExtResource("3_qbolb")
 
 [node name="Lasers" type="Node" parent="."]
 
-[node name="RigidBody2D14" parent="." instance=ExtResource("4_5x8st")]
+[node name="Enemies" type="Node" parent="."]
+
+[node name="RigidBody2D14" parent="Enemies" instance=ExtResource("4_5x8st")]
 position = Vector2(-373, 116)
 
-[node name="RigidBody2D15" parent="." instance=ExtResource("4_5x8st")]
+[node name="RigidBody2D15" parent="Enemies" instance=ExtResource("4_5x8st")]
 position = Vector2(-631, 186)
 
-[node name="RigidBody2D16" parent="." instance=ExtResource("4_5x8st")]
+[node name="RigidBody2D16" parent="Enemies" instance=ExtResource("4_5x8st")]
 position = Vector2(-701, 355)
-
-[node name="Enemies" type="Node" parent="."]
 
 [node name="Character" parent="." instance=ExtResource("4_368m5")]
 position = Vector2(374, 552)

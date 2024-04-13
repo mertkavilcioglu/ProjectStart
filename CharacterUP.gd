@@ -1,7 +1,8 @@
+class_name Player 
 extends CharacterBody2D
 
 #**************** UPGRADE VARIABLES *****************
-var health:int = 100
+var health:int = 10
 var damage: int = 1
 #var speed: float = 500.0
 #var fuel: float = 100.0
@@ -19,7 +20,10 @@ var MousePosition = null
 @onready var CanBoost:bool = true
 @onready var BoostRefuel:bool = false
 @onready var BoostFuel:float = 100.0
-@onready var muzzle=$Muzzle 
+@onready var muzzle1=$Muzzle 
+@onready var muzzle2=$Muzzle2
+@onready var muzzle3=$Muzzle3
+
 var laser_scene = preload("res://Scenes/laser.tscn")
 signal laser_shot(laser)
 var BoostCD:int = 3
@@ -85,9 +89,17 @@ func Boost_True():
 	
 func shoot_laser():
 	var l = laser_scene.instantiate()
-	l.global_position = muzzle.global_position
+	l.global_position = muzzle1.global_position
 	l.rotation = rotation + PI/2
 	emit_signal("laser_shot", l)
+	#var l2 = laser_scene.instantiate()
+	#l2.global_position = muzzle2.global_position
+	#l2.rotation = rotation + PI/2
+	#emit_signal("laser_shot", l2)
+	#var l3 = laser_scene.instantiate()
+	#l3.global_position = muzzle3.global_position
+	#l3.rotation = rotation + PI/2
+	#emit_signal("laser_shot", l3)
 	
 	
 #**************** UPGRADE FUNCTIONS *****************
@@ -108,6 +120,7 @@ func LevelUp():
 	if level_counter == 5:
 		body.texture = load("res://uzaygemisi/gövdeler/gövde lvl5.png")
 		wing.texture = load("res://uzaygemisi/kanatlar/kanat lvl5 gövde 1.png")
+		
 		
 	
 	
@@ -139,4 +152,11 @@ func _on_damage_pressed():
 	damage+=1
 	get_tree().paused = false
 	LevelPanel.visible = false
+	
+func playerGetHit(): 
+	emit_signal("hit") 
+	if health > 1: 
+		health -= 1 #
+	elif health <= 1:
+		print("DEAD")
 

@@ -78,4 +78,3 @@ func shoot_laser():
 	l.rotation = rotation + PI/2
 	emit_signal("laser_shot", l)
 	
-

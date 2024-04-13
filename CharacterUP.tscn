@@ -69,6 +69,7 @@ offset_bottom = 200.0
 text = "damage"
 
 [node name="get_level" type="Button" parent="."]
+visible = false
 offset_left = -500.0
 offset_top = -300.0
 offset_right = -350.0
@@ -89,6 +90,12 @@ top_level = true
 
 [node name="Muzzle" type="Node2D" parent="."]
 position = Vector2(48, 0)
+
+[node name="Muzzle2" type="Node2D" parent="."]
+position = Vector2(0, 13)
+
+[node name="Muzzle3" type="Node2D" parent="."]
+position = Vector2(0, -13)
 
 [connection signal="pressed" from="Upgrade/NewLevel/health" to="." method="_on_health_pressed"]
 [connection signal="pressed" from="Upgrade/NewLevel/speed" to="." method="_on_speed_pressed"]

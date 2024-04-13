@@ -8,9 +8,12 @@ func _ready():
 	player.connect("laser_shot", _on_player_laser_shot)
 	
 	for enemy in enemies.get_children():
-		enemy.connect("hit", _on_enemy_hit)
+		enemy.connect("laser_shot", _on_enemy_laser_shot)
 	
 func _on_player_laser_shot(laser):
+	lasers.add_child(laser)
+	
+func _on_enemy_laser_shot(laser):
 	lasers.add_child(laser)
 
 func _on_enemy_hit():
