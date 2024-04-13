@@ -54,13 +54,13 @@ func shoot_to_player():
 	emit_signal("laser_shot", l)
 	
 	
-func reachPlayerMidRadius(): # Player'ın etrafında hunter düşmanının giremediği çemberi hesaplar
+func reachPlayerMidRadius():
 	distanceToPlayer_x = self.position.x - player.position.x
 	distanceToPlayer_y = self.position.y - player.position.y
 	
 	calculatedRadius = int(sqrt(int(pow(distanceToPlayer_x,2)) + int(pow(distanceToPlayer_y,2)))) # c^2 = a^2 + b^2
 	
-	if(calculatedRadius <= radius): # Player'ın çevresindeki dairenin yarıçapına ulaşıp ulaşmadığını kontrol eder
+	if(calculatedRadius <= radius): 
 		return true
 	else:
 		return false
