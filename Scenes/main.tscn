@@ -1,12 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8aqogr0nm2ib"]
+[gd_scene load_steps=2 format=3 uid="uid://c8aqogr0nm2ib"]
 
 [ext_resource type="PackedScene" uid="uid://bm48kc742smsm" path="res://Objects/rigid_body_2d.tscn" id="1_5l5i2"]
-[ext_resource type="PackedScene" uid="uid://m53m1uhctp77" path="res://Objects/Character.tscn" id="2_8o5p4"]
 
 [node name="Main" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("2_8o5p4")]
-scale = Vector2(0.2, 0.2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 

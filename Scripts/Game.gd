@@ -7,6 +7,7 @@ extends Node2D
 func _ready():
 	player.connect("laser_shot", _on_player_laser_shot)
 	
+func _physics_process(delta):
 	for enemy in enemies.get_children():
 		enemy.connect("laser_shot", _on_enemy_laser_shot)
 	
