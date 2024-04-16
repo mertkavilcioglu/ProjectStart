@@ -92,10 +92,10 @@ top_level = true
 position = Vector2(48, 0)
 
 [node name="Muzzle2" type="Node2D" parent="."]
-position = Vector2(0, 13)
+position = Vector2(-23, 20)
 
 [node name="Muzzle3" type="Node2D" parent="."]
-position = Vector2(0, -13)
+position = Vector2(-23, -20)
 
 [connection signal="pressed" from="Upgrade/NewLevel/health" to="." method="_on_health_pressed"]
 [connection signal="pressed" from="Upgrade/NewLevel/speed" to="." method="_on_speed_pressed"]

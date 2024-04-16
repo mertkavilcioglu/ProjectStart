@@ -34,7 +34,7 @@ func _process(delta):
 		if !shoot_bas:
 			shoot_bas=true
 			shoot_laser()
-			await get_tree().create_timer(0.5).timeout
+			await get_tree().create_timer(0.15).timeout
 			shoot_bas=false
 
 func _physics_process(delta): 
@@ -92,14 +92,14 @@ func shoot_laser():
 	l.global_position = muzzle1.global_position
 	l.rotation = rotation + PI/2
 	emit_signal("laser_shot", l)
-	#var l2 = laser_scene.instantiate()
-	#l2.global_position = muzzle2.global_position
-	#l2.rotation = rotation + PI/2
-	#emit_signal("laser_shot", l2)
-	#var l3 = laser_scene.instantiate()
-	#l3.global_position = muzzle3.global_position
-	#l3.rotation = rotation + PI/2
-	#emit_signal("laser_shot", l3)
+	var l2 = laser_scene.instantiate()
+	l2.global_position = muzzle2.global_position
+	l2.rotation = rotation + PI/2
+	emit_signal("laser_shot", l2)
+	var l3 = laser_scene.instantiate()
+	l3.global_position = muzzle3.global_position
+	l3.rotation = rotation + PI/2
+	emit_signal("laser_shot", l3)
 	
 	
 #**************** UPGRADE FUNCTIONS *****************
